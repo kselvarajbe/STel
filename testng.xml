@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <listeners> -->
+ 
+<!--  <listener class-name=""></listener> -->
+ 
+<!--  </listeners> -->
+<suite name="Stel Test Suite">
+	<test name="Stel Testing" parallel="methods" thread-count="1">
+<!-- 	<parameter name="browser" value="Chrome"/> -->
+	
+		<classes>
+			<class name="runners.SanityRunner" />
+		</classes>
+	
+	
+<!-- 	<parameter name="browser" value="Chrome"/> -->
+	
+<!-- 		<classes> -->
+<!-- 			<class name="SanityRunner" /> -->
+<!-- 		</classes> -->
+	</test>
+	
+</suite>

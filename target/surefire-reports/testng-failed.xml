@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Stel Test Suite]">
+  <test thread-count="1" name="Stel Testing" parallel="methods">
+    <classes>
+      <class name="runners.SanityRunner"/>
+    </classes>
+  </test> <!-- Stel Testing -->
+</suite> <!-- Failed suite [Stel Test Suite] -->

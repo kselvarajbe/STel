@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>TestNG:  NE Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NE Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 22 18:26:15 SGT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16782 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.SanityRunner.feature()'><b>feature</b><br>Test class: runners.SanityRunner ()<br>Test method: Runs Cucumber Feature<br>Parameters: To submit form on TestCafe tutorial</td>
+<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {stacktrace=Backtrace:
+	Ordinal0 [0x00602A33+2501171]
+	Ordinal0 [0x0059D1C1+2085313]
+	Ordinal0 [0x004A1E70+1056368]
+	Ordinal0 [0x004C1860+1185888]
+	Ordinal0 [0x004E55C7+1332679]
+	Ordinal0 [0x004E363A+1324602]
+	Ordinal0 [0x004E31E9+1323497]
+	Ordinal0 [0x00484CAF+937135]
+	Ordinal0 [0x004851B6+938422]
+	Ordinal0 [0x00485491+939153]
+	GetHandleVerifier [0x0077EFE6+1504438]
+	GetHandleVerifier [0x0082DDA5+2220661]
+	GetHandleVerifier [0x00685589+481881]
+	GetHandleVerifier [0x00684639+477961]
+	Ordinal0 [0x005A28BD+2107581]
+	Ordinal0 [0x00484A47+936519]
+	Ordinal0 [0x00484440+934976]
+	GetHandleVerifier [0x00858A2C+2395900]
+	BaseThreadInitThunk [0x75F36739+25]
+	RtlGetFullPathName_UEx [0x773390AF+1215]
+	RtlGetFullPathName_UEx [0x7733907D+1165]
+, error=invalid session id, message=invalid session id}
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-O2PFH35H&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: RemoteWebDriver
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {stacktrace=Backtrace:
+	Ordinal0 [0x00602A33+2501171]
+	Ordinal0 [0x0059D1C1+2085313]
+	Ordinal0 [0x004A1E70+1056368]
+	Ordinal0 [0x004C1860+1185888]
+	Ordinal0 [0x004E55C7+1332679]
+	Ordinal0 [0x004E363A+1324602]
+	Ordinal0 [0x004E31E9+1323497]
+	Ordinal0 [0x00484CAF+937135]
+	Ordinal0 [0x004851B6+938422]
+	Ordinal0 [0x00485491+939153]
+	GetHandleVerifier [0x0077EFE6+1504438]
+	GetHandleVerifier [0x0082DDA5+2220661]
+	GetHandleVerifier [0x00685589+481881]
+	GetHandleVerifier [0x00684639+477961]
+	Ordinal0 [0x005A28BD+2107581]
+	Ordinal0 [0x00484A47+936519]
+	Ordinal0 [0x00484440+934976]
+	GetHandleVerifier [0x00858A2C+2395900]
+	BaseThreadInitThunk [0x75F36739+25]
+	RtlGetFullPathName_UEx [0x773390AF+1215]
+	RtlGetFullPathName_UEx [0x7733907D+1165]
+, error=invalid session id, message=invalid session id}
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-O2PFH35H&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at pagefactory.HomePage.enter_Name(HomePage.java:32)
+	at stepdef.HomepageSteps.i_enter_and_click_populate_button(HomepageSteps.java:34)
+	at ?.And I enter &quot;Peter&quot; and click populate button(src/test/resources/features/submit.feature:6)
+Caused by: java.lang.ClassCastException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to org.openqa.selenium.WebElement
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at pagefactory.HomePage.enter_Name(HomePage.java:32)
+	at stepdef.HomepageSteps.i_enter_and_click_populate_button(HomepageSteps.java:34)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace588194106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588194106'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {stacktrace=Backtrace:
+	Ordinal0 [0x00602A33+2501171]
+	Ordinal0 [0x0059D1C1+2085313]
+	Ordinal0 [0x004A1E70+1056368]
+	Ordinal0 [0x004C1860+1185888]
+	Ordinal0 [0x004E55C7+1332679]
+	Ordinal0 [0x004E363A+1324602]
+	Ordinal0 [0x004E31E9+1323497]
+	Ordinal0 [0x00484CAF+937135]
+	Ordinal0 [0x004851B6+938422]
+	Ordinal0 [0x00485491+939153]
+	GetHandleVerifier [0x0077EFE6+1504438]
+	GetHandleVerifier [0x0082DDA5+2220661]
+	GetHandleVerifier [0x00685589+481881]
+	GetHandleVerifier [0x00684639+477961]
+	Ordinal0 [0x005A28BD+2107581]
+	Ordinal0 [0x00484A47+936519]
+	Ordinal0 [0x00484440+934976]
+	GetHandleVerifier [0x00858A2C+2395900]
+	BaseThreadInitThunk [0x75F36739+25]
+	RtlGetFullPathName_UEx [0x773390AF+1215]
+	RtlGetFullPathName_UEx [0x7733907D+1165]
+, error=invalid session id, message=invalid session id}
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-O2PFH35H&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: RemoteWebDriver
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {stacktrace=Backtrace:
+	Ordinal0 [0x00602A33+2501171]
+	Ordinal0 [0x0059D1C1+2085313]
+	Ordinal0 [0x004A1E70+1056368]
+	Ordinal0 [0x004C1860+1185888]
+	Ordinal0 [0x004E55C7+1332679]
+	Ordinal0 [0x004E363A+1324602]
+	Ordinal0 [0x004E31E9+1323497]
+	Ordinal0 [0x00484CAF+937135]
+	Ordinal0 [0x004851B6+938422]
+	Ordinal0 [0x00485491+939153]
+	GetHandleVerifier [0x0077EFE6+1504438]
+	GetHandleVerifier [0x0082DDA5+2220661]
+	GetHandleVerifier [0x00685589+481881]
+	GetHandleVerifier [0x00684639+477961]
+	Ordinal0 [0x005A28BD+2107581]
+	Ordinal0 [0x00484A47+936519]
+	Ordinal0 [0x00484440+934976]
+	GetHandleVerifier [0x00858A2C+2395900]
+	BaseThreadInitThunk [0x75F36739+25]
+	RtlGetFullPathName_UEx [0x773390AF+1215]
+	RtlGetFullPathName_UEx [0x7733907D+1165]
+, error=invalid session id, message=invalid session id}
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-O2PFH35H&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at pagefactory.HomePage.enter_Name(HomePage.java:32)
+	at stepdef.HomepageSteps.i_enter_and_click_populate_button(HomepageSteps.java:34)
+	at ?.And I enter &quot;Peter&quot; and click populate button(src/test/resources/features/submit.feature:6)
+Caused by: java.lang.ClassCastException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to org.openqa.selenium.WebElement
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at pagefactory.HomePage.enter_Name(HomePage.java:32)
+	at stepdef.HomepageSteps.i_enter_and_click_populate_button(HomepageSteps.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>16</td>
+<td>runners.SanityRunner@57536d79</td></tr>
+</table><p>
+</body>
+</html>
