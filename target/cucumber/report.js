@@ -67,7 +67,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5024867900,
+  "duration": 4992112100,
   "status": "passed"
 });
 formatter.scenario({
@@ -114,7 +114,7 @@ formatter.match({
   "location": "HomepageSteps.i_am_on_Test_page()"
 });
 formatter.result({
-  "duration": 1051818900,
+  "duration": 507247400,
   "status": "passed"
 });
 formatter.match({
@@ -131,7 +131,7 @@ formatter.match({
   "location": "HomepageSteps.i_create_to_do_list_something_something(String,String)"
 });
 formatter.result({
-  "duration": 181662800,
+  "duration": 193286800,
   "status": "passed"
 });
 formatter.match({
@@ -144,12 +144,12 @@ formatter.match({
   "location": "HomepageSteps.i_verfiy_all_task_created_successfully(String)"
 });
 formatter.result({
-  "duration": 26851500,
+  "duration": 27532800,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1178426500,
+  "duration": 1154596400,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -259,7 +259,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1933961500,
+  "duration": 1996440800,
   "status": "passed"
 });
 formatter.scenario({
@@ -355,14 +355,14 @@ formatter.match({
   "location": "HomepageSteps.i_am_on_Test_page()"
 });
 formatter.result({
-  "duration": 282893000,
+  "duration": 230109400,
   "status": "passed"
 });
 formatter.match({
   "location": "HomepageSteps.i_create_to_do_list(DataTable)"
 });
 formatter.result({
-  "duration": 346503100,
+  "duration": 346174300,
   "status": "passed"
 });
 formatter.match({
@@ -375,28 +375,28 @@ formatter.match({
   "location": "HomepageSteps.i_mark_as_complete_a_task_something(String)"
 });
 formatter.result({
-  "duration": 2086357800,
+  "duration": 2103044500,
   "status": "passed"
 });
 formatter.match({
   "location": "HomepageSteps.i_click_active_button()"
 });
 formatter.result({
-  "duration": 2061668400,
+  "duration": 2068881700,
   "status": "passed"
 });
 formatter.match({
   "location": "HomepageSteps.i_click_all_button()"
 });
 formatter.result({
-  "duration": 2080889900,
+  "duration": 2082136400,
   "status": "passed"
 });
 formatter.match({
   "location": "HomepageSteps.i_clear_completed_task()"
 });
 formatter.result({
-  "duration": 55600,
+  "duration": 22800,
   "status": "passed"
 });
 formatter.match({
@@ -409,12 +409,12 @@ formatter.match({
   "location": "HomepageSteps.i_verfiy_that_task_cleared_successfully(String)"
 });
 formatter.result({
-  "duration": 81353000,
+  "duration": 94901200,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 1117711100,
+  "duration": 1094508700,
   "status": "passed"
 });
 });
