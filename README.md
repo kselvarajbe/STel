@@ -54,7 +54,7 @@ Build and update project.
 
 Via Eclipse - Project → src/test/java/TestRunner → Run as → TestNG Test
 
-Via Command prompt (used to view cucumber report)- Navigate to project folder → Run the command 'mvn clean verify'
+Via Command prompt (used to view cucumber report)- Navigate to project folder → Run the command **'mvn clean verify'**
 
 **To view Report**
 
