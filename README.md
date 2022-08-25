@@ -56,10 +56,8 @@ Via Eclipse - Project → src/test/java/TestRunner → Run as → TestNG Test
 
 Via Command prompt (used to view cucumber report)- Navigate to project folder → Run the command 'mvn clean verify'
 
-**Note**: testcase will fail purposely to view cucumber report with screenshot.
-
 **To view Report**
 
 Navigated to target > cucumber-html-reports > overview-fetures.html
 
-Open ‘overview-fetures.html’ file with browser.
+Open ‘overview-fetures.html’ file with browser. screenshot added for test cases.
