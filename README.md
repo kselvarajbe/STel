@@ -30,17 +30,7 @@
 
 **Cucumber** - Add Cucumber plugins.
 
-Launch the Eclipse IDE and from Help menu, click “Install New Software”.
 
-You will see a dialog window, click “Add” button.
-
-Type name as you wish, let’s take “Cucumber” and type “http://cucumber.github.com/cucumber-eclipse/update-site” as location. Click OK.
-
-You come back to the previous window but this time you must see Cucumber. Eclipse Plugin option in the available software list. Just Check the box and press “Next” button.
-
-Click on Next.
-
-Click “I accept the terms of the license agreement” then click Finish.
 
 **To import project from GIT**
 
